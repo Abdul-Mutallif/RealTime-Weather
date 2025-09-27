@@ -10,7 +10,7 @@ A modern, responsive weather forecasting application with smart predictions and 
 
 ## 🌟 Live Demo
 
-👉 [View Live Application](#)
+👉 [View Live Application](https://abdul-mutallif.github.io/RealTime-Weather/)
 
 ---
 
@@ -19,19 +19,19 @@ A modern, responsive weather forecasting application with smart predictions and 
 ### 🌦️ Core Functionality
 
 * Real-time Weather Data – Current conditions for any city worldwide
-* 7-Day Forecast – Detailed weekly predictions
+* Upcoming Forecast – Detailed weekly predictions
 * Today's Forecast – 3-hour interval updates
 * Air Conditions – Real feel, humidity, wind speed, and cloud coverage
 
 ### 🎨 User Experience
 
 * Dark/Light Mode – Smooth theme switching with animations
-* Smart Predictions – AI-powered advice and recommendations
-* Cloud Animations – Animated background for immersive feel
+* Smart Predictions – AI-powered advice and recommendations will be added later
+* Cloud Animations – Minimal cloud background for immersive feel
 * Responsive Design – Works on desktop, tablet, and mobile
 * AOS Animations – Smooth scroll-triggered effects
 
-### 🔮 Smart Predictions
+### 🔮 Smart Predictions will be added later
 
 The app provides intelligent weather advice including:
 
@@ -40,39 +40,6 @@ The app provides intelligent weather advice including:
 * ☀️ UV protection tips
 * 💨 Wind condition warnings
 * 🚗 Travel advice for foggy/stormy conditions
-
----
-
-## 🚀 Quick Start
-
-### Method 1: Direct Deployment
-
-Visit the [Live Demo](#) link above to start using instantly.
-
-### Method 2: Local Development
-
-Clone the repository:
-
-```bash
-git clone https://github.com/abdul-mutallif/RealTime-Weather.git
-cd RealTime-Weather
-```
-
-Open in browser:
-
-```bash
-# Directly open index.html
-```
-
-Or start a local server:
-
-```bash
-# Using Python
-python -m http.server 8000  
-
-# Using Node.js
-npx http-server
-```
 
 ---
 
@@ -91,7 +58,7 @@ npx http-server
 
 ### Searching for Weather
 
-1. Enter a city name (e.g., *London*, *New York*, *Tokyo*)
+1. Enter a city name (e.g., *kanpur*, *New York*, *Tokyo*)
 2. Press **Enter** or click **Search**
 3. View detailed weather data
 
@@ -104,7 +71,7 @@ npx http-server
 * **Today's Forecast:** 3-hour intervals
 * **7-Day Forecast:** Weekly overview
 
-### Smart Predictions Examples
+### Smart Predictions Examples ( will be added later)
 
 * > 70% rain → *"Take your umbrella! 🌧️"*
 * > 30°C → *"Stay hydrated! 🔥"*
