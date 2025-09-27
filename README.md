@@ -75,8 +75,8 @@ The app provides intelligent weather advice including:
 
 * > 70% rain → *"Take your umbrella! 🌧️"*
 * > 30°C → *"Stay hydrated! 🔥"*
-* High UV → *"Sunscreen recommended! ☀️"*
-* Strong winds → *"Secure loose items! 💨"*
+* > High UV → *"Sunscreen recommended! ☀️"*
+* > Strong winds → *"Secure loose items! 💨"*
 
 ---
 
@@ -225,13 +225,6 @@ This project is licensed under the [MIT License](LICENSE).
 * [Font Awesome](https://fontawesome.com/) – Icons
 * [Google Fonts](https://fonts.google.com/specimen/Poppins) – Typography
 * [AOS Library](https://michalsnik.github.io/aos/) – Animations
-
----
-
-## 📞 Support
-
-* Check **GitHub Issues**
-* Open a new issue with details (browser, device, error)
 
 ---
 
