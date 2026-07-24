@@ -805,16 +805,24 @@ body {
   .today-forecast {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .header-content {
-    flex-direction: column;
-    text-align: center;
-  }
 }
 
 @media (max-width: 768px) {
   .container {
     padding: 16px;
+  }
+
+  .header {
+    padding: 12px 0;
+    margin-bottom: 20px;
+  }
+
+  .header-content {
+    flex-wrap: nowrap;
+  }
+
+  .datetime {
+    display: none;
   }
 
   .today-forecast {
@@ -826,7 +834,8 @@ body {
   }
 
   .header-content h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    gap: 8px;
   }
 
   .forecast-section h2,
@@ -889,20 +898,25 @@ body {
     flex: 1;
     width: auto;
     min-width: 0;
-    border-radius: 8px 0 0 8px;
+    border-radius: 30px 0 0 30px;
   }
 
   .search-container button {
     white-space: nowrap;
   }
 
-  .header-controls {
-    flex-direction: column;
-    gap: 10px;
+  .header-content h1 {
+    font-size: 1.2rem;
   }
 
-  .header-content h1 {
-    font-size: 1.5rem;
+  .header-content h1 i {
+    font-size: 1rem;
+  }
+
+  .theme-toggle {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
   }
 
   .condition-item {
