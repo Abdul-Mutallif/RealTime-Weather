@@ -1,114 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RealTime Weather — check current conditions, hourly and weekly forecasts for any city worldwide." />
     <title>RealTime Weather</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <div class="clouds">
-        <div class="cloud"></div>
-        <div class="cloud"></div>
-        <div class="cloud"></div>
-        <div class="cloud"></div>
-    </div>
-
-    <div class="container">
-        <header data-aos="fade-down">
-            <div class="header-content">
-                <h1>RealTime Weather</h1>
-                <div class="header-controls">
-                    <div class="datetime" id="datetime">Loading date and time...</div>
-                    <button class="theme-toggle" id="themeToggle">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                </div>
-            </div>
-        </header>
-
-        <div class="search-container" data-aos="fade-up">
-            <input type="text" id="cityInput" placeholder="Enter a location (e.g., Kanpur)" value="Kanpur">
-            <button id="searchButton"><i class="fas fa-search"></i> Search</button>
-        </div>
-
-        <div id="errorMessage" class="error-message" style="display: none;"></div>
-
-        <div class="weather-summary" data-aos="fade-up" id="weatherSummary">
-            <i class="fas fa-cloud-sun"></i>
-            <div class="summary-text" id="summaryText">Loading weather summary...</div>
-        </div>
-
-        <div class="current-weather">
-            <div class="weather-card current-main" data-aos="fade-right">
-                <div class="location" id="location">Kanpur</div>
-                <div class="date" id="currentDate">Loading date...</div>
-                <div class="temperature" id="temperature">15°C</div>
-                <div class="weather-desc" id="weatherDesc">Partly cloudy</div>
-                <i class="fas fa-cloud-sun" id="weatherIcon"></i>
-            </div>
-
-            <div class="weather-card" data-aos="fade-left">
-                <h2>Air Conditions</h2>
-                <div class="air-conditions">
-                    <div class="condition-item" data-aos="zoom-in" data-aos-delay="100">
-                        <i class="fas fa-temperature-high"></i>
-                        <div>
-                            <div class="condition-value" id="realFeel">16°C</div>
-                            <div class="condition-name">Real Feel</div>
-                        </div>
-                    </div>
-                    <div class="condition-item" data-aos="zoom-in" data-aos-delay="200">
-                        <i class="fas fa-wind"></i>
-                        <div>
-                            <div class="condition-value" id="windSpeed">12 km/h</div>
-                            <div class="condition-name">Wind Speed</div>
-                            <div class="wind-direction">
-                                <i class="fas fa-arrow-up" id="windDirectionIcon"></i>
-                                <span id="windDirection">NW</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="condition-item" data-aos="zoom-in" data-aos-delay="300">
-                        <i class="fas fa-cloud"></i>
-                        <div>
-                            <div class="condition-value" id="cloudCover">40%</div>
-                            <div class="condition-name">Cloud Coverage</div>
-                        </div>
-                    </div>
-                    <div class="condition-item" data-aos="zoom-in" data-aos-delay="400">
-                        <i class="fas fa-tint"></i>
-                        <div>
-                            <div class="condition-value" id="humidity">65%</div>
-                            <div class="condition-name">Humidity</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="forecast-section">
-            <h2 data-aos="fade-up">Today's Forecast</h2>
-            <div class="today-forecast" id="todayForecast">
-            </div>
-        </div>
-
-        <div class="forecast-section">
-            <h2 data-aos="fade-up">Upcoming Forecast</h2>
-            <div class="weekly-forecast" id="weeklyForecast">
-            </div>
-        </div>
-
-        <footer>
-            <p>© 2025 RealTime Weather | Abdul Mutallif x WeatherAPI</p>
-        </footer>
-    </div>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
-</body>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
